@@ -1,0 +1,39 @@
+name: game_ads_manager
+description: >-
+  Drop-in AdMob mediation (real-time bidding) for Flutter games: consent,
+  ATT, preloading, frequency caps, rewarded/interstitial/banner/native ads,
+  and the official mediation adapters in one package.
+version: 1.0.0
+publish_to: none
+repository: https://github.com/9asso/game_ads_manager
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+  flutter: ">=3.38.1"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Main SDK (AdMob is the mediation platform).
+  google_mobile_ads: ^9.2.0
+
+  # Official AdMob mediation adapters (bidding).
+  gma_mediation_unity: ^1.12.0
+  gma_mediation_ironsource: ^2.7.1
+  gma_mediation_meta: ^1.7.1
+  gma_mediation_applovin: ^2.6.5
+  gma_mediation_mintegral: ^2.1.5
+  gma_mediation_pangle: ^4.2.1
+  gma_mediation_liftoffmonetize: ^1.5.6
+
+  # iOS App Tracking Transparency prompt.
+  app_tracking_transparency: ^2.0.7
+
+  # Remembers the first launch (app open ads are never shown on it).
+  shared_preferences: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0

@@ -1,0 +1,19 @@
+name: game_ads_manager_example
+description: Demo app for the game_ads_manager package (test ads only).
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  game_ads_manager:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
